@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Gyanender Sirohi">
+    <title>Portfolio | Gyanender Sirohi</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function changePage() {
+
+          var x = document.getElementById(changePage.caller.arguments[0].target.id);
+          // (functionName.caller.arguments[0].target.id) gets the id of the element who called the function
+
+          for(i=1;i<=6;i++)
+          {
+            var id = "a"+i;
+            var y = document.getElementById(id);
+            y.style.color = "#FDFDFD";
+          } 
+          x.style.color = "#90FF6E";
+
+          for(i=1;i<=6;i++)
+          {
+            var id2 = "sec"+i;
+            document.getElementById(id2).style.display = "none";
+          }
+        document.getElementById("sec"+ changePage.caller.arguments[0].target.id[1]).style.display = "block";
+        }
+        
+    </script>
+</head>
+<body>
+     <!-- Page Navbar -->
+<nav class="navbar" id="navbar" >
+    <div class="nav-container">
+        <div>
+		<a class="text" href="#home">Portfolio</a>
+        </div>
+		<div class="nav-menu">
+		    <ul>
+		        <li class="nav-item">
+                    <a  id="a1" href="javascript:void(0);" onclick="changePage()">HOME</a>
+                </li>
+                <li class="nav-item" id="slash">I</li>
+
+                <li class="nav-item">
+                    <a  id="a2" href="javascript:void(0);" onclick="changePage()">ABOUT</a>
+                </li>
+                <li class="nav-item" id="slash">I</li>
+			
+			    <li class="nav-item">
+                    <a  id="a3" href="javascript:void(0);" onclick="changePage()">SKILLS</a>
+                </li>
+                <li class="nav-item" id="slash">I</li>
+
+                <li class="nav-item">
+                    <a  id="a4" href="javascript:void(0);" onclick="changePage()">PROJECTS</a>
+                </li>
+                <li class="nav-item" id="slash">I</li>
+
+			    <li class="nav-item">
+                    <a  id="a5" href="javascript:void(0);" onclick="changePage()">CONTACT</a>
+                </li>
+                <li class="nav-item" id="slash">I</li>
+
+                <li class="nav-item">
+                    <a  id="a6" href="javascript:void(0);" onclick="changePage()">RESUME</a>
+                </li>
+            </ul>
+		</div>
+</nav>
+<!-- End of Page Navbar -->
+
+<!-- Home Section -->
+<div id="sec1" class="section" style="display:block;">
+    <div class="background-blur">
+        <h1>G</h1>
+    <div class="home-container">
+        
+        <div class="title">
+            Gyanender Sirohi
+        </div>
+        <div class="subtitle">
+            WEB DEVELOPER
+        </div>
+        <div class="text">
+            As a self-taught programmer fueled by passion and driven by personal projects, I excel in identifying bugs through effective Google searches and swiftly pinpointing the most optimal solutions among numerous alternatives.
+        </div>
+        <div class="button-row">
+            <button id="a5" class="button1" onclick="changePage()">Contact Me</button>
+            <button id="a6" class="button2" onclick="changePage()">Resume</button>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- End of Home Section -->
+
+<!-- About Section -->
+<div id="sec2" class="section" >
+    <div class="about-container">
+        <div class="title">
+            About Me
+        </div>
+        <div class="about-column">
+            <div class="text">I am Gyanender Sirohi, a programmer and a web developer, someone who thrives on curiosity and creativity. </div>
+            <div class="text">I'm always seeking to understand how things work and finding new ways to express ideas. With a background in Computer Application, I bring logical and analytical thinking to everything I do. Whether it's diving into complex problems or exploring diverse perspectives, I'm passionate about continuous learning and growth. Outside of programming, you can often find me making knives, bookbinding or simply enjoying video games. I believe in satisfying one's curiosity, and I'm excited about the future possibilities that come with each new experience.</div>
+        </div>
+    </div>
+</div>
+<!-- End of About Section -->
+
+<!-- Skills Section -->
+<div id="sec3" class="section" >
+    <div class="skill-container">
+        <div class="title">
+            Skills
+        </div>
+        <div class="skill-column">
+                <div class="skill-column-content">
+                    <div class="text">
+                    I thrive in effectively breaking down intricate problems into manageable tasks, which is crucial for developing robust and maintainable code in extensive projects.
+                    <br>I am motivated by challenges and continuously pursue opportunities to elevate my skills.
+                    <br>Through a self-directed learning methodology, I empower myself to swiftly comprehend and adeptly adopt new technologies with independence.
+                    </div>
+                </div>
+
+                <div class="skill-column-content">
+                    <div class="skill-column-further">
+                        <div class="skill-column-content2" id="skill-col-1">
+                            <p class="skill-column-rows text"><img src="assets/sk1.svg" alt="Skill svg ">&nbsp HTML</p>
+                            <p class="skill-column-rows text"><img src="assets/sk2.svg" alt="Skill svg ">&nbsp CSS</p>
+                            <p class="skill-column-rows text"><img src="assets/sk3.svg" alt="Skill svg ">&nbsp JavaScript</p>
+                            <p class="skill-column-rows text"><img src="assets/sk4.svg" alt="Skill svg ">&nbsp php</p>
+                            <p class="skill-column-rows text"><img src="assets/sk5.svg" alt="Skill svg ">&nbsp MySQL</p>
+                        </div>
+                        <div class="skill-column-content2" id="skill-col-2">
+                            <p class="skill-column-rows text"><img src="assets/sk6.svg" alt="Skill svg ">&nbsp C</p>
+                            <p class="skill-column-rows text"><img src="assets/sk7.svg" alt="Skill svg ">&nbsp C++</p>
+                            <p class="skill-column-rows text"><img src="assets/sk8.svg" alt="Skill svg ">&nbsp Python</p>
+                            <p class="skill-column-rows text"><img src="assets/sk9.svg" alt="Skill svg ">&nbsp Github</p>
+                        </div>
+                    </div>
+                </div>    
+        </div>
+    </div>
+</div>
+<!-- End of Skills Section -->
+
+<!-- Projects Section -->
+<div id="sec4" class="section" >
+    <div class="project-container">
+        <div class="title">
+            Projects
+        </div>
+        <div class="subtitle">
+            Hover to explore
+        </div>
+        <div class="list-wrapper">
+            <ul class="list">
+              <li class="item"><div class="content">Project 1</div></li>
+              <li class="item"><div class="content">Project 2</div></li>
+              <li class="item"><div class="content">Project 3</div></li>
+              <li class="item"><div class="content">Project 4</div></li>
+              <li class="item"><div class="content">Project 5</div></li>
+              <li class="item"><div class="content">Project 6</div></li>
+            </ul>
+            <button onclick="handleClick('previous')" class="button button--previous text" type="button">&lt</button>
+            <button onclick="handleClick('next')" class="button button--next text" type="button">&gt</button>
+          </div>
+        <script>
+            function handleClick(direction) {
+              // Based on the direction we call `scrollBy` with the item width we got earlier
+              if(direction === "previous") {
+                const list = document.querySelector(".list");
+                const item = document.querySelector(".item");
+                const itemWidth = item.offsetWidth;
+                list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+              } else {
+                const list = document.querySelector(".list");
+                const item = document.querySelector(".item");
+                const itemWidth = item.offsetWidth;
+                list.scrollBy({ left: itemWidth, behavior: "smooth" });
+              }
+            }
+        </script>  
+    </div>
+</div>
+<!-- End of Project Section -->
+
+<!-- Contact Section -->
+<div id="sec5" class="section" >
+    <div class="contact-container">
+        <div class="title">
+            Get In Touch!
+        </div>
+        <div class="contact-column">
+                <div class="contact-column-content">
+                    <div class="subtitle">
+                        Have a project in mind?
+                    </div>
+                    <div class="text">
+                    I am always open for new opportunities.<br> Feel free to contact me if you have any queries!
+                    </div>
+                    <div class="contact-social">
+                        <p class="social-rows text">
+                            <img src="assets/s1.svg" alt="Github svg">
+                            <a class="contact-social-links" href="https://github.com/GyanenderSirohi">GyanenderSirohi</a>
+                        </p>
+                        <p class="social-rows text">
+                            <img src="assets/s2.svg" alt="Mail svg">
+                            <a class="contact-social-links" href="mailto:gyanender2sirohi11@gmail.com">Gyanender2Sirohi11@gmail.com</a>
+                        </p>
+                        <p class="social-rows text">
+                            <img src="assets/s3.svg" alt="LinkedIn svg">
+                            <a class="contact-social-links" href="https://www.linkedin.com/in/gyanender-sirohi-57a794126/">Gyanender Sirohi</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-column-content">
+                    <form class="contact-form">
+                        <p class="text">Email </p>
+                        <div class="form-row1"><input type="text"></div>
+                        
+                        <p class="text">Subject </p>
+                        <div class="form-row1"><input type="text"></div>
+
+                        <p class="text">Message </p>
+                        <div class="form-row2"><textarea  rows="6" class="form-control"></textarea></div>
+
+                        <p></p>
+                        <div class="form-row3"><input type="submit" value="Send Message" class="form-button"></div>
+                    </form>
+                </div>    
+        </div>
+    </div>
+</div>
+<!-- End of Contact Section -->
+
+<!-- Resume Section -->
+<div id="sec6" class="section" >
+    <div class="resume-container">
+        <div class="title">
+            Experience
+        </div>
+        <div class="subtitle">
+            Hover to explore
+        </div>
+        <div class="text">
+            I've had the chance to work on my school's website and collaborate with various companies spanning a wide range of technologies, from small startups to larger corporations.
+        </div>
+        <div class="resume-button">
+            <a href="assets/Resume_GS.pdf" download="RESUME_Gyanender_Sirohi">
+            <button class="button2" onclick="changePage()"> Download Resume</button>
+            </a>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="timeline-start">
+                    <p class="text">2020</p> 
+                </div>
+                <div class="timeline-end">
+                    <p class="text">Present</p> 
+                </div>
+                
+                <div>
+                    <p class="timeline-dot" style="left:20%"></p>
+                    <p class="timeline-content-top" style="left:20%">Freelance</p>
+                </div>
+
+                <div>
+                    <p class="timeline-dot" style="left:40%"></p>
+                    <p class="timeline-content-bottom" style="left:40%">Amazon</p>
+                </div>
+
+                <div>
+                    <p class="timeline-dot" style="left:60%"></p>
+                    <p class="timeline-content-top" style="left:60%">Google</p>
+                </div>
+
+                <div>
+                    <p class="timeline-dot" style="left:80%"></p>
+                    <p class="timeline-content-top" style="left:80%">Microsoft</p>
+                </div>
+
+            </div>
+        </div> 
+    </div>
+</div>
+<!-- End of Resume Section -->
+
+<!-- footer -->
+<div class="footer">
+    <footer class="footer-content">
+        <div class="footer-columns">
+            <p class="text">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a href="#">Gyanender Sirohi</a>
+            </p>
+        </div>
+        <div class="footer-columns">
+            <a class="contact-social-links" href="https://github.com/GyanenderSirohi"><img src="assets/s1.svg" alt="Github svg"></a>
+            <a class="contact-social-links" href="mailto:gyanender2sirohi11@gmail.com"><img src="assets/s2.svg" alt="Mail svg"></a>               
+            <a class="contact-social-links" href="https://www.linkedin.com/in/gyanender-sirohi-57a794126/"><img src="assets/s3.svg" alt="LinkedIn svg"></a>
+        </div>
+    </footer>
+</div> 
+<!-- end of page footer -->
+
+
+</body>
+</html>

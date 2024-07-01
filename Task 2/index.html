@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Landing Page">
+    <meta name="author" content="Gyanender Sirohi">
+    <title>Landing Page | Gyanender Sirohi</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        //function for showing and hiding nav menu in mobile verion
+        function openMenu() {
+          var x = document.getElementById("nav-item-mob");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- Page Navbar -->
+<nav class="navbar" id="navbar" >
+    <div class="nav-container">
+        <div>
+		<a class="logo" href="#home">G. S. Knives</a>
+        </div>
+		<div class="nav-menu">
+		    <ul>
+		        <li class="nav-item">
+                    <a  href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a  href="#works">My Works</a>
+                </li>
+			
+			    <li class="nav-item">
+                    <a  href="#service">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a  href="#about">About</a>
+                </li>
+
+			    <li class="nav-item">
+                    <a  href="#contact">Contact</a>
+                </li>
+            </ul>
+		</div>
+
+        <div class="nav-menu-mob">
+            <a href="javascript:void(0);" onclick="openMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </div>
+           
+    </div>
+    <div id="nav-item-mob" class="nav-item-mob">
+        <a href="#home">Home</a>
+        <a href="#works">My Works</a>
+        <a href="#service">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>  
+    </div> 
+</nav>
+<!-- End of Page Navbar -->
+
+<!-- Header -->
+<header id="home" class="header">
+    <div class="header-container">
+        <img src="assets/main-720.png" alt="knife">
+        <hr style="margin:0; " color="white">
+            <div class="header-overlay">
+                <div class="title"> Survival knives </div>
+                <div class="subtitle">Survival knives for every Indian.
+                    A survival knife is frequently emphasized as crucial for survival in life-threatening situations. However, it's important to recognize its versatility beyond emergencies. Whether you're outdoors, working in the forest, or tackling tasks around the yard or farm, a survival knife proves to be a valuable tool in various daily situations.               </div>    
+            </div>
+    </div>
+    <div class="header-overlay2">
+        <div class="title"> Survival knives </div>
+        <div class="subtitle">Survival knives for every Indian.
+            A survival knife is frequently emphasized as crucial for survival in life-threatening situations. However, it's important to recognize its versatility beyond emergencies. Whether you're outdoors, working in the forest, or tackling tasks around the yard or farm, a survival knife proves to be a valuable tool in various daily situations.               </div>    
+    </div>
+</header>
+<!-- end of page header -->
+
+<!-- Display carousel -->
+<div id="works" class="section">
+    <div class="section-title">
+        <p> My Works</p>
+        <ul class="display-list">
+            <script>
+                const text = ["Full tang knife made of Spring steel (5160), Indian Teak Wood is used along with aluminium rivets for perfect grip.", "Full tang knife made of Stainless Steel (304), Paracord as handle wrap, perfect for any task.", "Half Tang knife made of file steel (D2), Acacia wood handle, provides excellent strength.", "Full Tang mini utility knife made of stainless steel (304), with teak wood handle.", "Full Tang mini utility knife made of stainless steel (304), with teak wood handle." , "Full Tang mini utility knife made of stainless steel (304), with teak wood handle."];
+                for(var i=1; i<=6; i++)
+                {
+                    document.write("<li class='display-item'> <div class='display-content'> <img src='assets/k" + i + ".png' alt='knife " + i + "'> <div id='display-content-text'> <p>" + text[i-1] + "</p></div></div></li>")
+                }
+            </script>  
+        </ul>
+    </div>
+</div>
+<!-- end of display carousel -->
+
+<!-- Services -->
+<div id="service" class="section">
+    <div class="service">
+        <div class="section-title">
+            <p> Services </p>
+        </div>
+        <div class="service-content">
+            <div class="service-cards">
+                <img src="assets/s1.svg" class="service-card-img">
+                <p class="caption">Customization</p>  
+                <span class="service-card-overlay">
+                    <span class="service-card-caption">
+                        <p class="subtitle">Customization</p>
+                    </span>
+                </span>
+            </div>
+            <div class="service-cards">
+                <img src="assets/s2.svg" class="service-card-img">
+                <p class="caption">Personalization</p>
+                    <span class="service-card-overlay">
+                        <span class="service-card-caption">
+                            <p class="subtitle">Personalization</p>
+                        </span>
+                    </span>
+            </div>
+            <div class="service-cards">
+                <img src="assets/s3.svg" class="service-card-img">
+                <p class="caption">Engraving</p>
+                    <span class="service-card-overlay">
+                        <span class="service-card-caption">
+                            <p class="subtitle">Engraving</p>
+                        </span>
+                    </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of services-->
+
+<!-- About Us -->
+<div id="about" class="section">
+    <div class="about">
+        <div class="section-title">
+            <p> About Me</p>
+            <div class="about-content">
+                <p class="title"> In the business since 2020</p>
+                <p class="subtitle"> I am Gyanender Sirohi, skilled across various disciplines rather than specializing in just one, often achieving proficiency that surpasses that of a single master. My journey into knife making began in 2018, and by 2020, I had become adept in this craft, mastering the art of balancing strength and aesthetic appeal in each knife.</p>
+                <p class="subtitle">  Over the years, I have extensively experimented with different materials for both knife blades and handles. The sheath, an integral component of any knife, is crafted uniquely by me using PVC, ensuring each one is distinctively designed to protect the blade effectively.</p>
+                <p class="subtitle">Additionally, I specialize in personalizing and customizing knives to meet individual preferences and requirements. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of About Us -->
+
+<!-- contact section -->
+<div class="section" id="contact">
+    <p class="title">How can you communicate?</p>
+    <p class="section-title">Contact Me</p>
+    <!-- contact form -->
+    <form action="">
+        <div class="contact-form">
+            <div class="contact-form-row1">
+                <input type="text"  class="form-control" placeholder="Your Name" required>
+            </div>   
+            <div class="contact-form-row1">
+                <input type="email" class="form-control" placeholder="Enter Email" required>
+            </div>
+            <div class="contact-form-row2">
+                <textarea name="comment" id="comment" rows="6" class="form-control"
+                    placeholder="Write Something"></textarea>
+            </div>
+            <div class="contact-form-row2">
+                <div class="form-button">
+                    <input type="submit" value="Send Message" >
+                </div>
+            </div>
+        </div>
+    </form><!-- end of contact form -->
+</div>
+<!-- end of contact section -->
+
+<!-- footer -->
+<div class="section" style="padding: 0;">
+    <footer class="footer">
+        <p class="footer-text">Copyright
+            <script>document.write(new Date().getFullYear())</script> &copy; <a
+                href="#">Gyanender Sirohi</a>
+        </p>
+        <div class="social-links">
+            <a href="#"> <img src="assets/9.svg"  class="social-img"> </a>
+            <a href="#"> <img src="assets/10.svg" class="social-img"> </a>
+            <a href="#"> <img src="assets/11.svg" class="social-img"> </a>
+            <a href="#"> <img src="assets/12.svg" class="social-img"> </a>
+        </div>
+    </footer>
+</div> 
+<!-- end of page footer -->
+
+</body> 
+</html>
